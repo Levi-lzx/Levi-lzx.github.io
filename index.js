@@ -28,19 +28,19 @@ scene.add(dirlight);
 
 /*Texture*/
 const textureloader = new THREE.TextureLoader();
-    const Rind = textureloader.load('Texture/LZX/Rind.jpg');
-    const Kernel = textureloader.load('Texture/LZX/Kernel.jpg');
-    const Box2 = textureloader.load('Texture/SYZ/Box2.png');
-    const Character = textureloader.load('Texture/SYZ/Character.png');
-    const Pastry1 = textureloader.load('Texture/SYZ/Pastry1.png');
-    const Box1 = textureloader.load('Texture/SYZ/Stone.png');
-    const Pastry3 = textureloader.load('Texture/SYZ/Pastry3.png');
-    const Box3 = textureloader.load('Texture/SYZ/Steel.png');
-    const Pastry4 = textureloader.load('Texture/SYZ/Pastry4.png');
-    const Wood = textureloader.load('Texture/SYZ/Wood.png');
+    const Rind = textureloader.load('Texture/Zhengxuan_Li/Rind.jpg');
+    const Kernel = textureloader.load('Texture/Zhengxuan_Li/Kernel.jpg');
+    const Box2 = textureloader.load('Texture/Yizhen_Sun/Box2.png');
+    const Character = textureloader.load('Texture/Yizhen_Sun/Character.png');
+    const Pastry1 = textureloader.load('Texture/Yizhen_Sun/Pastry1.png');
+    const Box1 = textureloader.load('Texture/Yizhen_Sun/Stone.png');
+    const Pastry3 = textureloader.load('Texture/Yizhen_Sun/Pastry3.png');
+    const Box3 = textureloader.load('Texture/Yizhen_Sun/Steel.png');
+    const Pastry4 = textureloader.load('Texture/Yizhen_Sun/Pastry4.png');
+    const Wood = textureloader.load('Texture/Yizhen_Sun/Wood.png');
 
 /*Background*/
-textureloader.load('Texture/LZX/Background.png', function(texture){
+textureloader.load('Texture/Zhengxuan_Li/Background.png', function(texture){
     scene.background = texture;
 })
 
@@ -103,9 +103,9 @@ const PastryL = new THREE.Group();
 const PastryO = new THREE.Group();
 const PastryW = new THREE.Group();
 const Table = new THREE.Group();
-    /*SYZ*/
+    /*Yizhen_Sun*/
         /*Character*/
-        loader.load('Model/SYZ/Character.stl', function(geometry){
+        loader.load('Model/Yizhen_Sun/Character.stl', function(geometry){
             CylinderUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
@@ -123,7 +123,7 @@ const Table = new THREE.Group();
         });
 
         /*Pastry1*/
-        loader.load('Model/SYZ/Pastry1.stl', function(geometry){
+        loader.load('Model/Yizhen_Sun/Pastry1.stl', function(geometry){
             CylinderUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
@@ -140,7 +140,7 @@ const Table = new THREE.Group();
         });
 
         /*Box1*/
-        loader.load('Model/SYZ/Box1.stl', function(geometry){
+        loader.load('Model/Yizhen_Sun/Box1.stl', function(geometry){
             SphereUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
@@ -160,7 +160,7 @@ const Table = new THREE.Group();
         });
 
         /*Table*/
-        loader.load('Model/SYZ/Table.stl', function(geometry){
+        loader.load('Model/Yizhen_Sun/Table.stl', function(geometry){
             CylinderUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
@@ -179,9 +179,9 @@ const Table = new THREE.Group();
             scene.add(Table);
         });
 
-    /*LZX*/
+    /*Zhengxuan_Li*/
         /*Rind*/
-        loader.load('Model/LZX/Rind.stl', function(geometry){
+        loader.load('Model/Zhengxuan_Li/Rind.stl', function(geometry){
             SphereUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
@@ -199,7 +199,7 @@ const Table = new THREE.Group();
         });
 
         /*Kernel*/
-        loader.load('Model/LZX/Kernel.stl', function(geometry){
+        loader.load('Model/Zhengxuan_Li/Kernel.stl', function(geometry){
             SphereUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
@@ -217,7 +217,7 @@ const Table = new THREE.Group();
         });
 
         /*Box2*/
-        loader.load('Model/LZX/Box2.stl', function(geometry){
+        loader.load('Model/Zhengxuan_Li/Box2.stl', function(geometry){
             CylinderUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
@@ -236,9 +236,9 @@ const Table = new THREE.Group();
             scene.add(PastryL);
         });
     
-    /*OYWY*/
+    /*Weiyu_Ouyang*/
         /*Pastry3*/
-        loader.load('Model/OYWY/Pastry3.stl', function(geometry){
+        loader.load('Model/Weiyu_Ouyang/Pastry3.stl', function(geometry){
             CylinderUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
@@ -256,7 +256,7 @@ const Table = new THREE.Group();
         });
 
         /*Box2*/
-        loader.load('Model/OYWY/Box3.stl', function(geometry){
+        loader.load('Model/Weiyu_Ouyang/Box3.stl', function(geometry){
             CylinderUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
@@ -275,9 +275,9 @@ const Table = new THREE.Group();
             scene.add(PastryO);
         });
     
-    /*WYY*/
+    /*Youyou_Wu*/
         /*Pastry4*/
-        loader.load('Model/WYY/Pastry4.stl', function(geometry){
+        loader.load('Model/Youyou_Wu/Pastry4.stl', function(geometry){
             CylinderUV(geometry);
 
             const material = new THREE.MeshStandardMaterial({
